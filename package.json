@@ -3,11 +3,14 @@
   "private": true,
   "workspaces": [
     "frontend",
+    "backend",
     "packages"
   ],
   "scripts": {
     "client:dev": "npm run dev --workspace=frontend",
     "client:build": "npm run build --workspace=frontend",
-    "client:lint": "npm run lint --workspace=frontend"
+    "client:lint": "npm run lint --workspace=frontend",
+    "server:dev": "npm run dev --workspace=backend",
+    "server:start": "npm run start --workspace=backend"
   }
 }
