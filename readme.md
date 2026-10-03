@@ -16,6 +16,7 @@ npm workspaces によるモノレポ構成。
   - constants ... 定数
   - element ... Reactエレメント（frontendのみ）
   - database ... DBスキーマ等（packagesのみ）
+  - error ... エラーハンドラー等（backendのみ）
   - types ... 型定義（TypeScript）
   - utils ... ユーティリティ関数系（pure関数を扱う）
 - features ... 機能ごとの要素
