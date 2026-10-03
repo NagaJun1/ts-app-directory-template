@@ -5,7 +5,7 @@
 npm workspaces によるモノレポ構成。
 
 - frontend ... クライアント（React + Vite）
-- backend ... サーバー（Express）
+- backend ... サーバー（Hono）
 - packages ... frontend / backend 共通で参照する要素
 
 各ワークスペースのソースは `src` 配下に置く。
@@ -25,7 +25,7 @@ npm workspaces によるモノレポ構成。
   - schema ... （packagesのみ）
   - types ... 型定義（TypeScript）
   - utils ... ユーティリティ関数系（pure関数を扱う）
-  - route.ts ... ルーターが必要な場合（backendではExpressのRouterを配置）
+  - route.ts ... ルーターが必要な場合（backendではHonoのサブアプリを配置）
 
 # 実行方法
 
@@ -34,7 +34,7 @@ npm workspaces によるモノレポ構成。
 - `npm run client:dev` ... frontend (Vite) を起動
 - `npm run client:build` ... frontend をビルド
 - `npm run client:lint` ... frontend の lint
-- `npm run server:dev` ... backend (Express, tsx watch) を起動
+- `npm run server:dev` ... backend (Hono, tsx watch) を起動
 - `npm run server:start` ... backend を起動
 
 # packages の参照
